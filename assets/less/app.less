@@ -1,5 +1,5 @@
 /*!
- * Roots 6.5.2
+ * Passione Pizza 1.0
  */
 
 @import "bootstrap/bootstrap.less";
@@ -10,6 +10,48 @@
 
 body { }
 
+.related-videos {
+   margin-left: 0;
+   padding-left: 0;
+   list-style: none;
+   li {
+      margin-left: 0;
+      padding-left: 0;
+      list-style: none;
+   }
+}
+
+.navbar {
+   margin-bottom: 0;
+}
+
+ #header-image {
+   -moz-box-shadow:    inset 0 0 10px rgba(0,0,0,0.2);
+   -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+   box-shadow:         inset 0 0 10px rgba(0,0,0,0.2);
+  height: 300px;
+  display: block;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+body.page-id-11 #header-image {
+  background-position: 0 90%;
+}
+
+body.page-id-9 #header-image {
+  background-position: 0 60%;
+}
+
+body.woocommerce-cart #header-image {
+  background-position: 0 35%;
+}
+
+body.woocommerce-checkout #header-image {
+  background-position: 0 66%;
+}
 
 
 /* ==========================================================================
@@ -18,7 +60,20 @@ body { }
 
 .banner { }
 
+#menu-primary-navigation {
+   font-size: 18px;
+}
 
+.navbar-brand {
+   background-image: url(/wp-content/uploads/Passione-Pizza-60.png);
+   background-repeat: no-repeat;
+   background-position: left center;
+   background-size: inherit;
+   padding-left: 70px;
+   padding-right: 30px;
+   font-weight: bold;
+   text-transform: uppercase;
+}
 
 /* ==========================================================================
    Content
@@ -63,7 +118,12 @@ body { }
    Footer
    ========================================================================== */
 
-.content-info { }
+.content-info {
+   background-color: #ccc;
+   min-height: 350px;
+   margin-top: 30px;
+   padding-top: 30px;
+}
 
 
 
