@@ -22,7 +22,14 @@ var Roots = {
   // All pages
   common: {
     init: function() {
-      // JavaScript to be fired on all pages
+
+      $.stellar({
+        horizontalOffset: 0,
+        verticalOffset: 0,
+        scrollProperty: 'scroll',
+        positionProperty: 'position'
+      });
+
     }
   },
   // Home page
