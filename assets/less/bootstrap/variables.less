@@ -13,7 +13,10 @@
 @gray-light:             lighten(#000, 60%);   // #999
 @gray-lighter:           lighten(#000, 90%); // #eee
 
-@brand-primary:         #007FFF;
+@gray-morrisons:		#62635C;
+@red-morrisons:			#400000;
+
+@brand-primary:         #400000;
 @brand-success:         #3FB618;
 @brand-info:            #9954BB;
 @brand-warning:         #FF7518;
@@ -40,12 +43,12 @@
 //## Font, line-height, and color for body text, headings, and more.
 
 @font-family-sans-serif:  "Open Sans", Calibri, Candara, Arial, sans-serif;
-@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-serif:       'Crimson Text', Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
-@font-family-base:        @font-family-sans-serif;
+@font-family-base:        @font-family-serif;
 
-@font-size-base:          15px;
+@font-size-base:          16px;
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 
@@ -326,7 +329,7 @@
 //##
 
 // Basics of a navbar
-@navbar-height:                    80px;
+@navbar-height:                    200px;
 @navbar-margin-bottom:             @line-height-computed;
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
@@ -334,8 +337,8 @@
 @navbar-collapse-max-height:       340px;
 
 @navbar-default-color:             #fff;
-@navbar-default-bg:                @gray-darker;
-@navbar-default-border:            darken(@navbar-default-bg, 6.5%);
+@navbar-default-bg:                @gray-morrisons;
+@navbar-default-border:            @gray-morrisons;
 
 // Navbar links
 @navbar-default-link-color:                #fff;

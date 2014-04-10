@@ -1,8 +1,9 @@
 /*!
  * Passione Pizza 1.0
  */
-
+@import url(http://fonts.googleapis.com/css?family=Crimson+Text);
 @import "bootstrap/bootstrap.less";
+
 
 /* ==========================================================================
    Base
@@ -60,14 +61,32 @@ body.page-id-11 #header-image {
 #menu-primary-navigation {
    font-size: 18px;
 }
+.navbar-header {
+  text-align: center;
+  .center-block();
+  width: 100%;
+  float: none;
+}
 
 .navbar-brand {
-  background-image: url(/wp-content/uploads/morrisons-logo.png);
-  width: 300px;
+  background-image: url(/wp-content/uploads/morrisons-jewelers-logo-white.png);
+  width: 100%;
   background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 80%;
+  background-position: center center;
+  background-size: 30%;
   .text-hide();
+  .center-block();
+  float: none;
+}
+
+.nav>li>a {
+  color: #fff!important;
+  font-size: 21px!important;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+  color: @brand-primary;
+  background-color: transparent;
 }
 
 /* ==========================================================================
@@ -116,7 +135,7 @@ body.page-id-11 #header-image {
    ========================================================================== */
 
 .content-info {
-   background-color: #ccc;
+   background-color: @gray-morrisons;
    min-height: 350px;
    margin-top: 30px;
    padding-top: 30px;
