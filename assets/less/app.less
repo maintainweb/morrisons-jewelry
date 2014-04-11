@@ -56,7 +56,16 @@ body.page-id-11 #header-image {
    Header
    ========================================================================== */
 
-.banner { }
+.banner {
+}
+
+nav {
+    background-color: @brand-primary;
+  }
+  .nav>li>a {
+    color: #fff;
+    font-size: 21px!important;
+  }
 
 #menu-primary-navigation {
    font-size: 18px;
@@ -79,14 +88,11 @@ body.page-id-11 #header-image {
   float: none;
 }
 
-.nav>li>a {
-  color: #fff!important;
-  font-size: 21px!important;
-}
+
 
 .nav>li>a:hover, .nav>li>a:focus {
-  color: @brand-primary;
-  background-color: transparent;
+  background-color: lighten(@brand-primary, 10%);
+  color: #fff;
 }
 
 /* ==========================================================================

@@ -4,6 +4,6 @@
     <?php if (is_singular('post')) { get_template_part('templates/entry-meta'); } ?>
   </header>
   <div class="entry-summary">
-    <?php the_excerpt(); ?>
+    <?php the_content(); ?>
   </div>
 </article>
