@@ -2,7 +2,7 @@
 /**
  * Custom functions
  */
-require_once locate_template('/lib/post-types.php');          // Custom functions
+require_once locate_template('/lib/post-types.php');          // Custom Post Types
 
 // http://wordpress.org/support/topic/blog-tab-gets-highlighted-in-nav-menu-for-custom-post-types
 function custom_fix_blog_tab_on_cpt($classes,$item,$args) {

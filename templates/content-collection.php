@@ -1,7 +1,7 @@
 <div class="row">
     <?php while (have_posts()) : the_post(); ?>
     <div class="col-sm-4">
-      <article <?php post_class(); ?>>
+      <a href="<?php the_permalink(); ?>"><article <?php post_class(); ?>>
                 <div class="thumbnail-wrapper">
                   <?php 
                   if ( has_post_thumbnail() ) {
@@ -12,13 +12,12 @@
           <h1 class="entry-title"><?php the_title(); ?></h1>
         </header>
         <div class="entry-content">
-          <?php the_excerpt(); ?>
+          <?php // the_excerpt(); ?>
         </div>
         <footer>
-          <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
+
         </footer>
-        <?php comments_template('/templates/comments.php'); ?>
-      </article>
+      </article></a>
     </div>
     <?php endwhile; ?>
 </div>
