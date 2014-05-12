@@ -23,13 +23,6 @@ var Roots = {
   common: {
     init: function() {
 
-      $.stellar({
-        horizontalOffset: 0,
-        verticalOffset: 0,
-        scrollProperty: 'scroll',
-        positionProperty: 'position'
-      });
-
     }
   },
   // Home page

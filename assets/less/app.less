@@ -30,7 +30,7 @@ body { }
    -moz-box-shadow:    inset 0 0 10px rgba(0,0,0,0.2);
    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
    box-shadow:         inset 0 0 10px rgba(0,0,0,0.2);
-  height: 420px;
+  height: 432px;
   display: block;
   width: 100%;
   background-size: cover;
@@ -44,17 +44,26 @@ body.home {
   }
 }
 
-body.page-id-13 #header-image {
-  background-position: 0 100%;
-}
-
-body.page-id-11 #header-image {
-  background-position: 0 -90%;
-}
 
 /* ==========================================================================
    Header
    ========================================================================== */
+
+.top-container {
+  border-bottom: 10px solid @brand-primary;
+  [class*=col-] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .list-group {
+    margin-bottom: 0;
+    background-color: @brand-primary;
+    a {
+      color: #fff;
+    }
+    text-align: center;
+  }
+}
 
 .banner {
 }
@@ -98,15 +107,17 @@ nav {
   float: none;
 }
 
-.navbar-brand {
+.navbar-brand, .brand {
   background-image: url(/wp-content/uploads/morrisons-jewelers-logo-white.png);
+  min-height: 150px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 30%;
+  background-size: 60%;
   .text-hide();
   .center-block();
   float: none;
+  background-color: @gray-morrisons;
 }
 
 

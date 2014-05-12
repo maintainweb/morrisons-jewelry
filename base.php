@@ -7,22 +7,26 @@
     </div>
   <![endif]-->
 
-  <?php
-    do_action('get_header');
-    // Use Bootstrap's navbar if enabled in config.php
-    if (current_theme_supports('bootstrap-top-navbar')) {
-      get_template_part('templates/header-top-navbar');
-    } else {
-      get_template_part('templates/header');
-    }
-  ?>
-
-  <?php
-      get_template_part('templates/content', 'header-image');
-  ?>
-  <?php
-      get_template_part('templates/secondary', 'navbar');
-  ?>
+  <div class="top-container container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+      <?php
+        do_action('get_header');
+        // Use Bootstrap's navbar if enabled in config.php
+        if (current_theme_supports('bootstrap-top-navbar')) {
+          get_template_part('templates/header-top-navbar');
+        } else {
+          get_template_part('templates/header');
+        }
+      ?>
+      </div>
+      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
+      <?php
+          get_template_part('templates/content', 'header-image');
+      ?>
+      </div>
+    </div>
+  </div>
   <div class="wrap container" role="document">
     <div class="content row">
       <main class="main <?php echo roots_main_class(); ?>" role="main">
