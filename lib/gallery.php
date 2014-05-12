@@ -124,7 +124,8 @@ if (current_theme_supports('bootstrap-gallery')) {
  */
 function roots_attachment_link_class($html) {
   $postid = get_the_ID();
-  $html = str_replace('<a', '<a class="thumbnail img-thumbnail"', $html);
+  $modalid = 'modal-' . $postid;
+  $html = str_replace('<a', '<a data-toggle="modal" data-target="#' . $modalid . '" class="thumbnail img-thumbnail"', $html);
   return $html;
 }
 add_filter('wp_get_attachment_link', 'roots_attachment_link_class', 10, 1);
