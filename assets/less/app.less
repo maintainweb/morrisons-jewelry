@@ -9,7 +9,8 @@
    Base
    ========================================================================== */
 
-body { }
+
+body {}
 
 .related-videos {
    margin-left: 0;
@@ -132,26 +133,51 @@ nav {
 
 .content { }
 
+
+
 article.collections {
   min-height: 350px;
   border: 1px solid @gray-lighter;
   margin-bottom: 30px;
-  &:after {
-    content: "Example";
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    font-size: 12px;
-    font-weight: 700;
-    color: #bbb;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
+  .transition(0.5s 0 all ease);
   header {
     position: relative;
     top: 0;
     left: 0;
     float: left;
+    width: 100%;
+    background-color: @gray-lighter;
+    display: block;
+    height: 20px;
+    text-align: center;
+    .transition(0.5s 0 all ease);
+  }
+  h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 12px;
+    font-weight: 700;
+    color: #bbb;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    .transition(0.5s 0 all ease);
+  }
+  &:hover {
+    .transition(0.5s 0 all ease);
+    border: 1px solid @brand-primary;
+    header {
+      .transition(0.5s 0 all ease);
+      background-color: @brand-primary;
+    }
+    h1 {
+      .transition(0.5s 0 all ease);
+      color: #fff;
+    }
   }
 }
 
