@@ -8,6 +8,7 @@ add_theme_support('bootstrap-gallery');     // Enable Bootstrap's thumbnails com
 add_theme_support('nice-search');           // Enable /?s= to /search/ redirect
 add_theme_support('jquery-cdn');            // Enable to load jQuery from the Google CDN
 
+$googleanalyticsid = get_field('google_analytics', 'options');
 /**
  * Configuration values
  */
@@ -55,7 +56,8 @@ function roots_display_sidebar() {
      */
     array(
       'is_404',
-      'is_front_page'
+      'is_front_page',
+      'is_archive'
     ),
     /**
      * Page template checks (via is_page_template())

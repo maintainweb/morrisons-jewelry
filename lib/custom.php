@@ -17,3 +17,14 @@ function custom_fix_blog_tab_on_cpt($classes,$item,$args) {
     return $classes;
 }
 add_filter('nav_menu_css_class','custom_fix_blog_tab_on_cpt',10,3);
+
+
+if( function_exists('acf_add_options_sub_page') )
+{
+    acf_add_options_sub_page(array(
+        'title' => 'Branding Options'
+    ));
+    acf_add_options_sub_page(array(
+        'title' => 'Social & Analytics'
+    ));
+}
