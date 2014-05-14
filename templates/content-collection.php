@@ -9,7 +9,7 @@
           <div class="thumbnail-wrapper">
           <?php 
             if ( has_post_thumbnail() ) {
-              the_post_thumbnail('full', array('class' => 'img-responsive'));
+              the_post_thumbnail('medium', array('class' => 'img-responsive'));
             } ?>
           </div>
           <div class="entry-content">
