@@ -2,7 +2,7 @@
       <!-- Three columns of text below the carousel -->
 
       <!-- START THE FEATURETTES -->
-
+<!--
       <hr class="featurette-divider">
 
       <div class="row featurette">
@@ -18,7 +18,7 @@
           <img class="img-circle img-responsive featurette-image" src="/wp-content/uploads/IMG_7208.jpg" alt="Generic placeholder image">
         </div>
       </div>
-<!--
+
       <hr class="featurette-divider">
 
       <div class="row featurette">
