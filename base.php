@@ -9,7 +9,7 @@
 
   <div class="top-container container-fluid">
     <div class="row">
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <?php
         do_action('get_header');
         // Use Bootstrap's navbar if enabled in config.php
@@ -18,11 +18,6 @@
         } else {
           get_template_part('templates/header');
         }
-      ?>
-      </div>
-      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
-      <?php
-          get_template_part('templates/content', 'header-image');
       ?>
       </div>
     </div>
