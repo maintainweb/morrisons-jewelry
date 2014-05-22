@@ -10,7 +10,7 @@ if ( $c == 2 ) { $class = 'active'; }
 		<div class="item <?php echo $class; ?>">
 			<?php get_template_part('templates/content', 'header-image'); ?>
           	<div class="container">
-            	<div class="carousel-caption">
+            	<div id="carousel-caption-<?php the_ID(); ?>" class="carousel-caption">
               		<h1><a class="" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
               		<p><?php the_excerpt(); ?></p>
               		<p><a class="btn btn-lg btn-primary" href="<?php the_permalink(); ?>" role="button">View <?php the_title(); ?> Collection</a></p>

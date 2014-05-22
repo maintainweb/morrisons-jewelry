@@ -162,15 +162,21 @@ nav {
 
 }
 
-
-
 article.collections {
   min-height: 350px;
+  background-color: #fff;
   border: 1px solid @gray-lighter;
   margin-bottom: 30px;
   .transition(0.5s 0 all ease);
   .thumbnail-wrapper {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 250px;
+    .img-responsive {
+      display: inline-block!important;
+    }
     img {
+      display: inline-block;
       margin-left: auto;
       margin-right: auto;
     }
@@ -218,6 +224,7 @@ article.collections {
 
 body.single-collections {
   article.collections {
+    background-color: transparent;
     border: 0;
     header {
       position: relative;
@@ -246,6 +253,13 @@ body.single-collections {
       text-transform: uppercase;
       letter-spacing: 1px;
       .transition(0.5s 0 all ease);
+    }
+    .entry-content {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      p:last-of-type {
+        padding-bottom: 30px;
+      }
     }
   }
 }

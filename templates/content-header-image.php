@@ -39,10 +39,9 @@
     text-align: center;
       <?php endif; ?>
     background-color: <?php echo $background_color; ?>;
-    
   }
-  .carousel-caption, .carousel-caption h1, .carousel-caption h1 a {
-    color: <?php echo $text_color; ?>;
+  #carousel-caption-<?php the_ID(); ?>.carousel-caption, #carousel-caption-<?php the_ID(); ?>.carousel-caption h1, #carousel-caption-<?php the_ID(); ?>.carousel-caption h1 a {
+    color: <?php echo $text_color; ?>!important;
   }
 </style>
 <div id="header-image-<?php the_ID(); ?>" class="header-image" >
