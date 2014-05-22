@@ -31,7 +31,7 @@
   <style>
     .brand {
       background-image: url(<?php echo $med; ?>);
-      background-color: <?php echo $secondarycolor; ?>
+      background-color: <?php echo $secondarycolor; ?>;
       width: <?php echo $medwidth; ?>;
       height: <?php echo $medheight; ?>;
     }

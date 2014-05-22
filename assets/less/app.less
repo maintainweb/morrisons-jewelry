@@ -8,9 +8,15 @@
 /* ==========================================================================
    Base
    ========================================================================== */
+.redox_01 {
+  background-image: url(/wp-content/uploads/redox_01.png);
+  background-repeat: repeat;
+  background-color: transparent;
+}
 
-
-body {}
+body {
+  .redox_01;
+}
 
 
 .related-videos {
@@ -32,7 +38,7 @@ body {}
    -moz-box-shadow:    inset 0 0 10px rgba(0,0,0,0.5);
    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
    box-shadow:         inset 0 0 10px rgba(0,0,0,0.5);
-  height: 250px;
+  height: 282px;
   display: block;
   width: 100%;
   background-size: cover;
@@ -67,7 +73,32 @@ body.home {
   }
 }
 
+.classy-fabric {
+  background-image: url(/wp-content/uploads/classy_fabric.png);
+  background-repeat: repeat;
+  background-color: transparent;
+}
+
 .banner {
+  #branding-header-row {
+    .classy-fabric;
+    #branding-header-col {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: transparent;
+      .brand {
+        min-height: 150px;
+        width: 400px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        .text-hide();
+        .center-block();
+        float: none;
+        background-color: transparent;
+      }
+    }
+  }
 }
 
 .modal-content {
@@ -102,23 +133,12 @@ nav {
 #menu-primary-navigation {
    font-size: 18px;
 }
+
 .navbar-header {
   text-align: center;
   .center-block();
   width: 100%;
   float: none;
-}
-
-.navbar-brand, .brand {
-  min-height: 150px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 60%;
-  .text-hide();
-  .center-block();
-  float: none;
-  background-color: @gray-morrisons;
 }
 
 
@@ -262,9 +282,9 @@ body.single-collections {
    ========================================================================== */
 
 .content-info {
-   background-color: @gray-morrisons;
+   .classy-fabric;
    min-height: 350px;
-   margin-top: 30px;
+   margin-top: 0;
    padding-top: 30px;
 }
 
@@ -288,7 +308,7 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 
 @media (min-width: @screen-sm-min) {
   #header-image {
-    height: 432px;
+    height: 282px;
   }
 }
 
