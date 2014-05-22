@@ -1,6 +1,7 @@
 <?php
         $image = get_field('header_image');
-
+        $background_color = get_field('background_color');
+        $text_color = get_field('text_color');
         if( !empty($image) )
         {
           $image = get_field('header_image');
@@ -27,12 +28,23 @@
 
 ?>
 <?php endif; ?>
-    <div id="header-image" class="" >
-      <div class="header-inner">
-          <style>
-           #header-image {
-            background-image: url(<?php echo $large; ?>);
-          }
-          </style>
-      </div>
-    </div>
+<style>
+  #header-image-<?php the_ID(); ?> {
+    background-image: url(<?php echo $large; ?>);
+      <?php if( $width < 700 ): ?>
+    background-size: contain;
+    text-align: center;
+      <?php else : ?>
+    background-size: cover;
+    text-align: center;
+      <?php endif; ?>
+    background-color: <?php echo $background_color; ?>;
+    
+  }
+  .carousel-caption, .carousel-caption h1, .carousel-caption h1 a {
+    color: <?php echo $text_color; ?>;
+  }
+</style>
+<div id="header-image-<?php the_ID(); ?>" class="header-image" >
+  <div class="header-inner"> </div>
+</div>

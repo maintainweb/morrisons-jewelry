@@ -1,11 +1,27 @@
-// Cosmo 3.1.1
-// Variables
-// --------------------------------------------------
+//== Patterns
+//
+//## Subtle Background Patterns.
 
+.pattern-background {
+  background-repeat: repeat;
+  background-color: transparent;
+}
+.redox_01 {
+  background-image: url(/wp-content/uploads/redox_01.png);
+  .pattern-background;
+}
+
+.classy-fabric {
+  background-image: url(/wp-content/uploads/classy_fabric.png);
+  .pattern-background;
+}
 
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
+
+@gray-morrisons:		#62635C;
+@red-morrisons:			#561010;
 
 @gray-darker:            lighten(#000, 13.5%); // #222
 @gray-dark:              lighten(#000, 20%);   // #333
@@ -13,10 +29,7 @@
 @gray-light:             lighten(#000, 60%);   // #999
 @gray-lighter:           lighten(#000, 90%); // #eee
 
-@gray-morrisons:		#62635C;
-@red-morrisons:			#400000;
-
-@brand-primary:         #400000;
+@brand-primary:         #561010;
 @brand-success:         #3FB618;
 @brand-info:            #9954BB;
 @brand-warning:         #FF7518;

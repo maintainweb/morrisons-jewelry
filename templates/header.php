@@ -5,7 +5,7 @@
       <a class="brand" href="<?php echo home_url('/') ?>"><?php bloginfo('name'); ?></a>
     </div>
   </div>
-  <div class="row">
+  <div id="nav-row" class="row">
     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
       <nav class="nav-main" role="navigation">
         <?php

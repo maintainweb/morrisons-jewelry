@@ -29,7 +29,7 @@ function morrisonsjewelry_post_types() {
 		'description'         => __( 'Upcoming Events', 'morrisonsjewelry' ),
 		'labels'              => $labels,
 		'supports'            => array( 'title', 'editor', 'thumbnail', 'custom-fields', 'page-attributes', ),
-		'taxonomies'          => array( ),
+//		'taxonomies'          => array(),
 		'hierarchical'        => false,
 		'public'              => true,
 		'show_ui'             => true,
@@ -71,10 +71,10 @@ function morrisonsjewelry_post_types() {
 	);
 	$args = array(
 		'label'               => __( 'collections', 'morrisonsjewelry' ),
-		'description'         => __( 'Faculty & Collections', 'morrisonsjewelry' ),
+		'description'         => __( 'Collections', 'morrisonsjewelry' ),
 		'labels'              => $labels,
-		'supports'            => array( 'title', 'editor', 'thumbnail', 'custom-fields', 'page-attributes', ),
-		'taxonomies'          => array('department'),
+		'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', 'page-attributes', ),
+		'taxonomies'          => array('category', 'post_tag'),
 		'hierarchical'        => false,
 		'public'              => true,
 		'show_ui'             => true,
